@@ -1,8 +1,8 @@
-FROM golang:1.19 AS build
+FROM golang:1.22.5 AS build
 
 WORKDIR /app
 
-RUN go mod init teste
+# RUN go mod init teste - caso não tenha criado o go.mod e necessario criar
 
 COPY . .
 
